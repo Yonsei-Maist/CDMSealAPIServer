@@ -6,7 +6,7 @@ namespace CDMSealCore {
 	class Program {
 		static void Main(string[] args) {
 			Security.SecretKey = "MAIST-FHE2021";
-			SealManager manager = new SealManager(@"D:\document\임시\FHE\test.txt", @"D:\document\임시\FHE\key.txt");
+			SealManager manager = new SealManager(@"D:\document\cdm\ir_summary.csv", @"D:\document\cdm\result.txt", @"D:\document\임시\FHE\key.txt");
 
 			manager.doTest();
 		}

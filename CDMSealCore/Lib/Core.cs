@@ -118,9 +118,9 @@ namespace CDMSealCore.Lib {
         static public string Add(IEnumerable<string> ciphers) {
             List<Ciphertext> ciphertextList = new List<Ciphertext>();
 
-            foreach(string item in ciphers) {
+            foreach (string item in ciphers) {
                 ciphertextList.Add(loadCipher(item));
-			}
+            }
 
             Ciphertext added = new Ciphertext();
 
